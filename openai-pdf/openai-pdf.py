@@ -36,6 +36,7 @@ assistant: Assistant
 for a in client.beta.assistants.list(order="desc", limit=100).data:
     if a.name == asst_name and a.model == model_name:
         assistant = a
+        print("using existing assistant")
         break
 else:
     assistant = client.beta.assistants.create(
@@ -44,6 +45,7 @@ else:
         tools=[{"type": "code_interpreter"}],
         description="Extracts full text from PDFs and returns it verbatim"
     )
+    print("creating new assistant")
 
 # 4️⃣ Start a thread + run -----------------------------------------------------
 message = (
