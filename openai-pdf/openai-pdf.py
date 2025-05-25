@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-extract_pdf_with_gpt41nano.py
+extract_pdf_with_retrieval.py
 
 Usage:
-    python extract_pdf_with_gpt41nano.py /path/to/your/file.pdf
+    python extract_pdf_with_retrieval.py /path/to/your/file.pdf
 """
 
 import sys, time, os, pathlib, json
@@ -12,7 +12,7 @@ from openai.types.beta.assistant import Assistant
 
 # 1️⃣ Setup -------------------------------------------------------------------
 if len(sys.argv) != 2 or not sys.argv[1].lower().endswith(".pdf"):
-    sys.exit("Usage: python extract_pdf_with_gpt41nano.py your_doc.pdf")
+    sys.exit("Usage: python extract_pdf_with_retrieval.py your_doc.pdf")
 
 pdf_path = pathlib.Path(sys.argv[1]).expanduser().resolve()
 if not pdf_path.is_file():
@@ -29,7 +29,7 @@ file_id = file_obj.id
 
 # 3️⃣ Create / reuse an Assistant -------------------------------------------
 print("⇢ Ensuring Assistant exists …")
-asst_name = "PDF-extractor-nano"
+asst_name = "PDF-extractor-retrieval"
 assistant: Assistant
 
 # Try to find an existing one (keeps your quota tidy)
@@ -42,16 +42,18 @@ else:
     assistant = client.beta.assistants.create(
         name=asst_name,
         model=model_name,
-        tools=[{"type": "code_interpreter"}],
-        description="Extracts full text from PDFs and returns it verbatim"
+        tools=[{"type": "file_search"}],
+        description="Extracts full text from PDFs using file search/retrieval"
     )
     print("creating new assistant")
 
 # 4️⃣ Start a thread + run -----------------------------------------------------
 message = (
-    "Please open the attached PDF, extract **all** textual content in the "
-    "original order (no summaries, no headings, no analysis) and return only "
-    "the plain text. If the PDF is empty, reply with an empty string."
+    "Please extract **all** textual content from the attached PDF document "
+    "in the original order. Return the complete text verbatim without any "
+    "summaries, analysis, or modifications. If the PDF is empty or contains "
+    "no readable text, reply with an empty string. Do not add any commentary "
+    "or explanations - just the raw text content."
 )
 
 print("⇢ Creating thread and run …")
@@ -59,18 +61,18 @@ thread = client.beta.threads.create(
     messages=[{
         "role": "user",
         "content": message,
-        "attachments": [{"file_id": file_id, "tools": [{"type": "code_interpreter"}]}]
+        "attachments": [{"file_id": file_id, "tools": [{"type": "file_search"}]}]
     }]
 )
 
 run = client.beta.threads.runs.create(
     thread_id=thread.id,
     assistant_id=assistant.id,
-    instructions="Return only raw text."
+    instructions="Extract and return only the complete raw text content from the PDF. No analysis or formatting changes."
 )
 
 # 5️⃣ Poll until done ---------------------------------------------------------
-print("⇢ Waiting for GPT-4.1-nano to finish …")
+print("⇢ Waiting for file search to finish …")
 while run.status not in {"completed", "failed", "cancelled", "expired"}:
     time.sleep(3)
     run = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
