@@ -1,0 +1,3 @@
+The extracted text content appears to be non-readable or may be corrupted. This could be due to the PDF being scanned images or encrypted, which prevents `PyPDF2` from extracting the text properly.
+
+Please upload a PDF that contains actual searchable/selectable text for accurate extraction.
