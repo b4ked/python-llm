@@ -11,6 +11,8 @@ An intelligent chatbot that uses Retrieval-Augmented Generation (RAG) to provide
 - ⚙️ **Configurable**: Adjustable similarity thresholds and context document limits
 - 📊 **Conversation History**: Tracks chat history and context usage
 - 🔧 **Programmatic API**: Can be used both interactively and programmatically
+- 📁 **Detailed File References**: Shows specific filenames, relevance scores, and content previews
+- 📋 **Source Citations**: AI responses include clear citations to source documents
 
 ## Prerequisites
 
@@ -88,14 +90,14 @@ python example_usage.py
 
 ### Similarity Threshold
 - **Range**: 0.0 - 1.0
-- **Default**: 0.7
+- **Default**: 0.3 (optimized for medical documents)
 - **Description**: Minimum similarity score for documents to be considered relevant
 - **Lower values**: More documents, potentially less relevant
 - **Higher values**: Fewer documents, more precise matches
 
 ### Max Context Documents
 - **Range**: 1 - 10
-- **Default**: 5
+- **Default**: 10
 - **Description**: Maximum number of relevant documents to include in context
 - **More documents**: Richer context but longer prompts
 - **Fewer documents**: Focused context, faster processing
@@ -107,7 +109,7 @@ python example_usage.py
 3. **Similarity Search**: pgvector finds the most similar document chunks in the database
 4. **Context Construction**: Relevant documents are formatted into context
 5. **Response Generation**: GPT-4o generates a response using the context and question
-6. **Output**: User receives a context-aware response with document citations
+6. **Output**: User receives a context-aware response with detailed document citations and file references
 
 ## Architecture
 
@@ -154,10 +156,37 @@ The chatbot includes comprehensive error handling for:
 - Invalid user input
 - Network issues
 
+## Enhanced File Reference Features
+
+The chatbot now provides detailed information about source documents:
+
+### During Search
+- **File Discovery**: Shows all files found during semantic search
+- **Relevance Scores**: Displays similarity scores for each document
+- **Content Previews**: Shows snippet previews of relevant content
+- **Chunk Information**: Indicates which part of the document (page/chunk) is being referenced
+
+### In Responses
+- **Source Citations**: AI responses include specific document names
+- **Reference List**: Numbered list of all sources used in each response
+- **Conversation History**: Tracks which files were referenced in each exchange
+
+### Example Output
+```
+📋 Reference Files Found:
+   📄 1. medical_guidelines.pdf (Chunk 3)
+      🎯 Relevance Score: 0.847
+      📝 Preview: This document discusses treatment protocols for...
+
+📚 References used in this response:
+   [1] medical_guidelines.pdf (Chunk 3) (Relevance: 0.847)
+   [2] patient_handbook.docx (Page 15) (Relevance: 0.723)
+```
+
 ## Performance Tips
 
-1. **Optimize Similarity Threshold**: Start with 0.7 and adjust based on your data
-2. **Limit Context Documents**: Use 3-5 documents for optimal balance
+1. **Optimize Similarity Threshold**: Start with 0.3 and adjust based on your data
+2. **Limit Context Documents**: Use 5-10 documents for optimal balance
 3. **Database Indexing**: Ensure proper pgvector indexes are created
 4. **Embedding Model**: Using `text-embedding-3-small` to match your existing embeddings (1536 dimensions)
 
