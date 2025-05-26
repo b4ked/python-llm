@@ -1,0 +1,76 @@
+[0;34mOpenAI Image Batch Processing Script[0m
+[0;34m=====================================[0m
+2025-05-26 12:10:15 - Starting batch processing of images in: img
+2025-05-26 12:10:15 - Log file: /Users/parryh/suwadoc/python-llm/openai-img/batch_processing_20250526_121014.log
+[0;34mFound 7 image files to process[0m
+[0;34m[1/7] Processing: 0001-scaled.jpg[0m
+2025-05-26 12:10:15 - Processing: 0001-scaled.jpg
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: 0001-scaled.jpg[0m
+[0;34m[2/7] Processing: a05d5938a01f69dc513c5e8b3a91677c.jpg[0m
+2025-05-26 12:10:16 - Processing: a05d5938a01f69dc513c5e8b3a91677c.jpg
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: a05d5938a01f69dc513c5e8b3a91677c.jpg[0m
+[0;34m[3/7] Processing: hand-holding-medical-report-showing-result-of-blood-test-A5N9W6.jpg[0m
+2025-05-26 12:10:17 - Processing: hand-holding-medical-report-showing-result-of-blood-test-A5N9W6.jpg
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: hand-holding-medical-report-showing-result-of-blood-test-A5N9W6.jpg[0m
+[0;34m[4/7] Processing: Student-Medical-Report.jpg[0m
+2025-05-26 12:10:18 - Processing: Student-Medical-Report.jpg
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: Student-Medical-Report.jpg[0m
+[0;34m[5/7] Processing: 407-Medical-Mission-Post-Activity-Report.png[0m
+2025-05-26 12:10:19 - Processing: 407-Medical-Mission-Post-Activity-Report.png
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: 407-Medical-Mission-Post-Activity-Report.png[0m
+[0;34m[6/7] Processing: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png[0m
+2025-05-26 12:10:21 - Processing: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png[0m
+[0;34m[7/7] Processing: 1.png[0m
+2025-05-26 12:10:22 - Processing: 1.png
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-img/openai-img-db.py", line 22, in <module>
+    from database import DatabaseConnection
+  File "/Users/parryh/suwadoc/python-llm/openai-img/../db/database.py", line 5, in <module>
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[0;31m✗ Failed to process: 1.png[0m
+[0;34m=====================================[0m
+[0;34mBatch Processing Summary:[0m
+[0;32m✓ Successfully processed: 0[0m
+[1;33m⚠ Skipped (already exists): 0[0m
+[0;31m✗ Failed: 7[0m
+[0;34mTotal files: 7[0m
+[0;34mLog file: /Users/parryh/suwadoc/python-llm/openai-img/batch_processing_20250526_121014.log[0m
+[0;31mSome files failed to process. Check the log file for details.[0m

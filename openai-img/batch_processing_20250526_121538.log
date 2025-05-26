@@ -1,0 +1,176 @@
+[0;34mOpenAI Image Batch Processing Script[0m
+[0;34m=====================================[0m
+[0;34m🔍 Checking prerequisites...[0m
+[0;32m✅ Using conda/anaconda python with openai module[0m
+[0;32m✅ Prerequisites check completed[0m
+2025-05-26 12:15:38 - Starting batch processing of images in: img
+2025-05-26 12:15:38 - Log file: /Users/parryh/suwadoc/python-llm/openai-img/batch_processing_20250526_121538.log
+[0;34mFound 7 image files to process[0m
+[0;34m[1/7] Processing: 0001-scaled.jpg[0m
+2025-05-26 12:15:38 - Processing: 0001-scaled.jpg
+⇢ Processing image: 0001-scaled.jpg
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document '0001-scaled.jpg' stored successfully in database with ID: 60
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: 0001-scaled.jpg
+  - Size: 474243 bytes
+  - Document ID: 60
+  - Extracted text length: 3208 characters
+  - Title: Urine Test Results Summary
+  - Preview: Urine Test Results Summary
+
+Patient: Test, Test  
+Patient #: TEN-78527  
+Doctor: DOCTOR, TEST  
+Acc #: 249068  
+Birth: 1/1/2001  
+Age: 23 years  
+Collection Date: 1/7/2024  
+Received in Lab: 1/8/2024 ...
+[0;32m✓ Successfully processed: 0001-scaled.jpg[0m
+[0;34m[2/7] Processing: a05d5938a01f69dc513c5e8b3a91677c.jpg[0m
+2025-05-26 12:16:17 - Processing: a05d5938a01f69dc513c5e8b3a91677c.jpg
+⇢ Processing image: a05d5938a01f69dc513c5e8b3a91677c.jpg
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'a05d5938a01f69dc513c5e8b3a91677c.jpg' stored successfully in database with ID: 61
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: a05d5938a01f69dc513c5e8b3a91677c.jpg
+  - Size: 146941 bytes
+  - Document ID: 61
+  - Extracted text length: 2538 characters
+  - Title: Mycobacterium Test Report Summary
+  - Preview: Mycobacterium Test Report Summary
+
+   
+
+DRLOGY PATHOLOGY LAB  
+Accurate | Caring | Instant  
+105-108, SMART VISION COMPLEX, HEALTHCARE ROAD, OPPOSITE HEALTHCARE COMPLEX, MUMBAI - 689578  
+📞 0123456789...
+[0;32m✓ Successfully processed: a05d5938a01f69dc513c5e8b3a91677c.jpg[0m
+[0;34m[3/7] Processing: hand-holding-medical-report-showing-result-of-blood-test-A5N9W6.jpg[0m
+[1;33m⚠ Skipping hand-holding-medical-report-showing-result-of-blood-test-A5N9W6.jpg - already exists in database[0m
+[0;34m[4/7] Processing: Student-Medical-Report.jpg[0m
+2025-05-26 12:16:44 - Processing: Student-Medical-Report.jpg
+⇢ Processing image: Student-Medical-Report.jpg
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Student-Medical-Report.jpg' stored successfully in database with ID: 62
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: Student-Medical-Report.jpg
+  - Size: 83164 bytes
+  - Document ID: 62
+  - Extracted text length: 4004 characters
+  - Title: Student Medical Report Requirements
+  - Preview: Student Medical Report Requirements
+
+ 
+
+STUDENT MEDICAL REPORT
+For Graduate and Part-time Undergraduate Students
+The State of Connecticut General Statutes Section 10a - 155 and Fairfield University re...
+[0;32m✓ Successfully processed: Student-Medical-Report.jpg[0m
+[0;34m[5/7] Processing: 407-Medical-Mission-Post-Activity-Report.png[0m
+2025-05-26 12:17:14 - Processing: 407-Medical-Mission-Post-Activity-Report.png
+⇢ Processing image: 407-Medical-Mission-Post-Activity-Report.png
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document '407-Medical-Mission-Post-Activity-Report.png' stored successfully in database with ID: 63
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: 407-Medical-Mission-Post-Activity-Report.png
+  - Size: 119165 bytes
+  - Document ID: 63
+  - Extracted text length: 3217 characters
+  - Title: Medical Mission Post-Activity Report
+  - Preview: Medical Mission Post-Activity Report
+
+   
+
+NATIONAL UNIVERSITY
+
+Community Extension Office  
+POST-ACTIVITY REPORT  
+ACO – CE – F – 014  
+ver 2022  
+
+POST-ACTIVITY REPORT  
+
+Activity Title: NU Kalusuga...
+[0;32m✓ Successfully processed: 407-Medical-Mission-Post-Activity-Report.png[0m
+[0;34m[6/7] Processing: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png[0m
+2025-05-26 12:17:35 - Processing: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png
+⇢ Processing image: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document '62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png' stored successfully in database with ID: 64
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png
+  - Size: 654606 bytes
+  - Document ID: 64
+  - Extracted text length: 2702 characters
+  - Title: Still's Disease Report Details
+  - Preview: Still's Disease Report Details
+
+---
+
+Interpretation
+
+SD-9 is a screening algorithm that determines the likelihood an individual has adult-onset Still’s disease based on clinical findings and laborator...
+[0;32m✓ Successfully processed: 62ff88b0972a543849a7db6e_Sample SD-9 Report-02.png[0m
+[0;34m[7/7] Processing: 1.png[0m
+2025-05-26 12:17:58 - Processing: 1.png
+⇢ Processing image: 1.png
+✓ Text extraction completed successfully
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document '1.png' stored successfully in database with ID: 65
+Database connection closed
+✓ Image text extraction and database storage completed successfully!
+  - File: 1.png
+  - Size: 27995 bytes
+  - Document ID: 65
+  - Extracted text length: 1134 characters
+  - Title: Medical Report Summary
+  - Preview: Medical Report Summary
+
+Visit Info
+
+Doctor’s Name:   Dr. Olivia Greene          Visit Date:  14.11.2023  
+Specialization:   Cardiology  
+
+Patient Info
+
+Full Name:   Sarah Anderson          Birth Date:...
+[0;32m✓ Successfully processed: 1.png[0m
+[0;34m=====================================[0m
+[0;34mBatch Processing Summary:[0m
+[0;32m✓ Successfully processed: 6[0m
+[1;33m⚠ Skipped (already exists): 1[0m
+[0;31m✗ Failed: 0[0m
+[0;34mTotal files: 7[0m
+[0;34mLog file: /Users/parryh/suwadoc/python-llm/openai-img/batch_processing_20250526_121538.log[0m
+[0;32mAll files processed successfully![0m

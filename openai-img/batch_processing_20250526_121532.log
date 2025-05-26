@@ -1,0 +1,8 @@
+[0;34mOpenAI Image Batch Processing Script[0m
+[0;34m=====================================[0m
+[0;34m🔍 Checking prerequisites...[0m
+[0;32m✅ Using conda/anaconda python with openai module[0m
+[0;32m✅ Prerequisites check completed[0m
+[0;31mError: Image directory '/img' does not exist[0m
+[0;34mUsage: ./batch_process_images.sh [image_directory][0m
+[0;34mIf no directory is provided, defaults to /img[0m
