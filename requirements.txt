@@ -1,0 +1,16 @@
+# Consolidated requirements for python-llm project
+# This file contains all dependencies needed to run Python scripts in this repository
+
+# OpenAI API client
+openai>=1.14.0
+
+# Database dependencies
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.23
+pgvector>=0.2.4
+
+# Utility libraries
+python-dotenv>=1.0.0
+requests>=2.31.0
+numpy>=1.24.0
+typing-extensions>=4.0.0 
