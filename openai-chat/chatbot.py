@@ -88,10 +88,39 @@ class RAGChatbot:
                 return []
             
             print(f"✅ Found {len(results)} relevant document(s)")
-            # Show similarity scores for debugging
+            
+            # Show detailed information about each document found
+            print("📋 Reference Files Found:")
             for i, doc in enumerate(results, 1):
+                # Extract metadata for file information
+                metadata = doc.get('metadata', {})
+                if isinstance(metadata, str):
+                    import json
+                    try:
+                        metadata = json.loads(metadata)
+                    except:
+                        metadata = {}
+                
+                filename = metadata.get('filename', f'Document {doc.get("document_id", "Unknown")}')
                 similarity = doc.get('similarity', 0)
-                print(f"   📄 Document {i}: Similarity {similarity:.3f}")
+                chunk_info = ""
+                
+                # Add chunk information if available
+                if 'chunk_index' in metadata:
+                    chunk_info = f" (Chunk {metadata['chunk_index']})"
+                elif 'page' in metadata:
+                    chunk_info = f" (Page {metadata['page']})"
+                
+                print(f"   📄 {i}. {filename}{chunk_info}")
+                print(f"      🎯 Relevance Score: {similarity:.3f}")
+                
+                # Show a preview of the content
+                content_preview = doc.get('content_chunk', '')[:100]
+                if len(doc.get('content_chunk', '')) > 100:
+                    content_preview += "..."
+                print(f"      📝 Preview: {content_preview}")
+                print()
+            
             return results
             
         except Exception as e:
@@ -140,8 +169,9 @@ class RAGChatbot:
         system_message = """You are an intelligent assistant with access to a knowledge base. 
 Use the provided context documents to answer questions accurately and comprehensively. 
 If the context doesn't contain enough information to fully answer the question, say so clearly.
-Always cite which documents you're referencing when possible.
-Be helpful, accurate, and conversational."""
+IMPORTANT: Always cite which specific documents/files you're referencing when providing information. 
+Mention the document names (e.g., "According to Document 1: filename.pdf..." or "As stated in filename.docx...").
+Be helpful, accurate, and conversational while being specific about your sources."""
         
         if context:
             user_content = f"""Context Documents:
@@ -191,6 +221,8 @@ Note: No relevant context documents were found in the knowledge base. Please pro
         
         if context:
             print(f"📚 Using context from {len(relevant_docs)} document(s)")
+            # Show which files are being used as references
+            self._display_reference_summary(relevant_docs)
         else:
             print("📝 No relevant context found, using general knowledge")
         
@@ -203,16 +235,79 @@ Note: No relevant context documents were found in the knowledge base. Please pro
         if response:
             print(f"\n🤖 Assistant: {response}")
             
-            # Store in conversation history
+            # Show reference files used in the response
+            if relevant_docs:
+                print(f"\n📚 References used in this response:")
+                self._display_compact_references(relevant_docs)
+            
+            # Store in conversation history with file references
+            file_references = self._extract_file_references(relevant_docs)
             self.conversation_history.append({
                 "user": user_query,
                 "assistant": response,
-                "context_docs": len(relevant_docs)
+                "context_docs": len(relevant_docs),
+                "file_references": file_references
             })
         else:
             print("❌ Failed to generate response")
         
         return response
+    
+    def _display_reference_summary(self, relevant_docs: List[Dict[str, Any]]):
+        """Display a summary of reference files being used"""
+        if not relevant_docs:
+            return
+        
+        unique_files = set()
+        for doc in relevant_docs:
+            metadata = doc.get('metadata', {})
+            if isinstance(metadata, str):
+                import json
+                try:
+                    metadata = json.loads(metadata)
+                except:
+                    metadata = {}
+            filename = metadata.get('filename', f'Document {doc.get("document_id", "Unknown")}')
+            unique_files.add(filename)
+        
+        print(f"📁 Reference files: {', '.join(sorted(unique_files))}")
+    
+    def _display_compact_references(self, relevant_docs: List[Dict[str, Any]]):
+        """Display compact reference information after the response"""
+        for i, doc in enumerate(relevant_docs, 1):
+            metadata = doc.get('metadata', {})
+            if isinstance(metadata, str):
+                import json
+                try:
+                    metadata = json.loads(metadata)
+                except:
+                    metadata = {}
+            
+            filename = metadata.get('filename', f'Document {doc.get("document_id", "Unknown")}')
+            similarity = doc.get('similarity', 0)
+            chunk_info = ""
+            
+            if 'chunk_index' in metadata:
+                chunk_info = f" (Chunk {metadata['chunk_index']})"
+            elif 'page' in metadata:
+                chunk_info = f" (Page {metadata['page']})"
+            
+            print(f"   [{i}] {filename}{chunk_info} (Relevance: {similarity:.3f})")
+    
+    def _extract_file_references(self, relevant_docs: List[Dict[str, Any]]) -> List[str]:
+        """Extract file references for conversation history"""
+        file_refs = []
+        for doc in relevant_docs:
+            metadata = doc.get('metadata', {})
+            if isinstance(metadata, str):
+                import json
+                try:
+                    metadata = json.loads(metadata)
+                except:
+                    metadata = {}
+            filename = metadata.get('filename', f'Document {doc.get("document_id", "Unknown")}')
+            file_refs.append(filename)
+        return file_refs
     
     def interactive_chat(self):
         """Start an interactive chat session"""
@@ -266,6 +361,14 @@ Note: No relevant context documents were found in the knowledge base. Please pro
             print(f"\n{i}. User: {exchange['user'][:100]}{'...' if len(exchange['user']) > 100 else ''}")
             print(f"   Assistant: {exchange['assistant'][:100]}{'...' if len(exchange['assistant']) > 100 else ''}")
             print(f"   Context docs used: {exchange['context_docs']}")
+            
+            # Show file references if available
+            if 'file_references' in exchange and exchange['file_references']:
+                unique_files = list(set(exchange['file_references']))
+                if len(unique_files) <= 3:
+                    print(f"   📁 Files referenced: {', '.join(unique_files)}")
+                else:
+                    print(f"   📁 Files referenced: {', '.join(unique_files[:3])} and {len(unique_files)-3} more")
     
     def adjust_settings(self):
         """Allow user to adjust search parameters"""
