@@ -5,6 +5,7 @@
 # Database data
 data/
 postgres_data/
+backup/
 
 # Python cache
 __pycache__/
