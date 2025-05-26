@@ -1,0 +1,833 @@
+2025-05-26 01:47:13 - 🚀 PDF Batch Processing Script
+2025-05-26 01:47:13 - ===============================
+2025-05-26 01:47:13 - Script: process_all_pdfs.sh
+2025-05-26 01:47:13 - Started: Mon May 26 01:47:13 BST 2025
+2025-05-26 01:47:13 - Reports directory: /Users/parryh/suwadoc/python-llm/openai-pdf/reports
+2025-05-26 01:47:13 - Log file: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014713.log
+2025-05-26 01:47:13 - 🔍 Checking prerequisites...
+2025-05-26 01:47:14 - ✅ Using conda/anaconda python with openai module
+2025-05-26 01:47:14 - ✅ Prerequisites check completed
+2025-05-26 01:47:14 - 🔍 Scanning for PDF files...
+2025-05-26 01:47:14 - 📁 Found 53 PDF files to process
+2025-05-26 01:47:14 - ⚡ About to process 53 PDF files
+2025-05-26 01:47:16 - 🏁 Starting batch processing...
+2025-05-26 01:47:16 - 📄 Processing: Allergy_&_Immunology_Report.pdf (5.7 KB)
+2025-05-26 01:47:33 - ✅ SUCCESS: Allergy_&_Immunology_Report.pdf processed successfully
+2025-05-26 01:47:33 -    📊 Database ID: 7
+7
+2025-05-26 01:47:33 -    📝 Text length: 4020 characters
+--- Processing Allergy_&_Immunology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Allergy_&_Immunology_Report.pdf' stored successfully in database with ID: 7
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Allergy_&_Immunology_Report.pdf
+  - Size: 5824 bytes
+  - Text length: 4020 characters
+  - Database ID: 7
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Allergy_&_Immunology_Report.pdf
+Database ID: 7
+Text Length: 4,020 characters
+File Size: 5,824 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(7)
+  get_documents_by_filename('Allergy_&_Immunology_Report.pdf')
+============================================================
+--- End Allergy_&_Immunology_Report.pdf ---
+
+2025-05-26 01:47:34 - 📄 Processing: Anemia_Workup_-_Pernicious_Anemia.pdf (3.8 KB)
+2025-05-26 01:47:47 - ✅ SUCCESS: Anemia_Workup_-_Pernicious_Anemia.pdf processed successfully
+2025-05-26 01:47:47 -    📊 Database ID: 8
+8
+2025-05-26 01:47:47 -    📝 Text length: 725 characters
+--- Processing Anemia_Workup_-_Pernicious_Anemia.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Anemia_Workup_-_Pernicious_Anemia.pdf' stored successfully in database with ID: 8
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Anemia_Workup_-_Pernicious_Anemia.pdf
+  - Size: 3857 bytes
+  - Text length: 725 characters
+  - Database ID: 8
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Anemia_Workup_-_Pernicious_Anemia.pdf
+Database ID: 8
+Text Length: 725 characters
+File Size: 3,857 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(8)
+  get_documents_by_filename('Anemia_Workup_-_Pernicious_Anemia.pdf')
+============================================================
+--- End Anemia_Workup_-_Pernicious_Anemia.pdf ---
+
+2025-05-26 01:47:48 - 📄 Processing: Appendix-2.-Example-Medical-Report-1.pdf (173.3 KB)
+2025-05-26 01:48:22 - ✅ SUCCESS: Appendix-2.-Example-Medical-Report-1.pdf processed successfully
+2025-05-26 01:48:22 -    📊 Database ID: 9
+9
+2025-05-26 01:48:22 -    📝 Text length: 13734 characters
+--- Processing Appendix-2.-Example-Medical-Report-1.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: in_progress …
+   status: in_progress …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+⚠ Warning: Document 'Appendix-2.-Example-Medical-Report-1.pdf' already exists in database (1 entries)
+  Proceeding to add new entry...
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Appendix-2.-Example-Medical-Report-1.pdf' stored successfully in database with ID: 9
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Appendix-2.-Example-Medical-Report-1.pdf
+  - Size: 177501 bytes
+  - Text length: 13734 characters
+  - Database ID: 9
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Appendix-2.-Example-Medical-Report-1.pdf
+Database ID: 9
+Text Length: 13,734 characters
+File Size: 177,501 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(9)
+  get_documents_by_filename('Appendix-2.-Example-Medical-Report-1.pdf')
+============================================================
+--- End Appendix-2.-Example-Medical-Report-1.pdf ---
+
+2025-05-26 01:48:23 - 📄 Processing: Autoimmune_Panel_-_SLE_Workup.pdf (1.4 KB)
+2025-05-26 01:48:32 - ✅ SUCCESS: Autoimmune_Panel_-_SLE_Workup.pdf processed successfully
+2025-05-26 01:48:32 -    📊 Database ID: 10
+10
+2025-05-26 01:48:32 -    📝 Text length: 428 characters
+--- Processing Autoimmune_Panel_-_SLE_Workup.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Autoimmune_Panel_-_SLE_Workup.pdf' stored successfully in database with ID: 10
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Autoimmune_Panel_-_SLE_Workup.pdf
+  - Size: 1407 bytes
+  - Text length: 428 characters
+  - Database ID: 10
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Autoimmune_Panel_-_SLE_Workup.pdf
+Database ID: 10
+Text Length: 428 characters
+File Size: 1,407 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(10)
+  get_documents_by_filename('Autoimmune_Panel_-_SLE_Workup.pdf')
+============================================================
+--- End Autoimmune_Panel_-_SLE_Workup.pdf ---
+
+2025-05-26 01:48:33 - 📄 Processing: Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf (3.7 KB)
+2025-05-26 01:48:46 - ✅ SUCCESS: Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf processed successfully
+2025-05-26 01:48:46 -    📊 Database ID: 11
+11
+2025-05-26 01:48:46 -    📝 Text length: 842 characters
+--- Processing Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf' stored successfully in database with ID: 11
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf
+  - Size: 3822 bytes
+  - Text length: 842 characters
+  - Database ID: 11
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf
+Database ID: 11
+Text Length: 842 characters
+File Size: 3,822 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(11)
+  get_documents_by_filename('Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf')
+============================================================
+--- End Autoimmune_Thyroid_Panel_-_Hashimoto’s_Thyroiditis.pdf ---
+
+2025-05-26 01:48:47 - 📄 Processing: Bone_Profile_-_Osteoporosis_Screening.pdf (1.4 KB)
+2025-05-26 01:48:59 - ✅ SUCCESS: Bone_Profile_-_Osteoporosis_Screening.pdf processed successfully
+2025-05-26 01:48:59 -    📊 Database ID: 12
+12
+2025-05-26 01:48:59 -    📝 Text length: 411 characters
+--- Processing Bone_Profile_-_Osteoporosis_Screening.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Bone_Profile_-_Osteoporosis_Screening.pdf' stored successfully in database with ID: 12
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Bone_Profile_-_Osteoporosis_Screening.pdf
+  - Size: 1418 bytes
+  - Text length: 411 characters
+  - Database ID: 12
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Bone_Profile_-_Osteoporosis_Screening.pdf
+Database ID: 12
+Text Length: 411 characters
+File Size: 1,418 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(12)
+  get_documents_by_filename('Bone_Profile_-_Osteoporosis_Screening.pdf')
+============================================================
+--- End Bone_Profile_-_Osteoporosis_Screening.pdf ---
+
+2025-05-26 01:49:00 - 📄 Processing: Bone_Turnover_Markers_-_Osteopenia.pdf (3.7 KB)
+2025-05-26 01:49:19 - ✅ SUCCESS: Bone_Turnover_Markers_-_Osteopenia.pdf processed successfully
+2025-05-26 01:49:19 -    📊 Database ID: 13
+13
+2025-05-26 01:49:19 -    📝 Text length: 2219 characters
+--- Processing Bone_Turnover_Markers_-_Osteopenia.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Bone_Turnover_Markers_-_Osteopenia.pdf' stored successfully in database with ID: 13
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Bone_Turnover_Markers_-_Osteopenia.pdf
+  - Size: 3763 bytes
+  - Text length: 2219 characters
+  - Database ID: 13
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Bone_Turnover_Markers_-_Osteopenia.pdf
+Database ID: 13
+Text Length: 2,219 characters
+File Size: 3,763 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(13)
+  get_documents_by_filename('Bone_Turnover_Markers_-_Osteopenia.pdf')
+============================================================
+--- End Bone_Turnover_Markers_-_Osteopenia.pdf ---
+
+2025-05-26 01:49:20 - 📄 Processing: Cardiac_Enzymes_-_Myocardial_Infarction.pdf (3.8 KB)
+2025-05-26 01:49:35 - ✅ SUCCESS: Cardiac_Enzymes_-_Myocardial_Infarction.pdf processed successfully
+2025-05-26 01:49:35 -    📊 Database ID: 14
+14
+2025-05-26 01:49:35 -    📝 Text length: 2414 characters
+--- Processing Cardiac_Enzymes_-_Myocardial_Infarction.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Cardiac_Enzymes_-_Myocardial_Infarction.pdf' stored successfully in database with ID: 14
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Cardiac_Enzymes_-_Myocardial_Infarction.pdf
+  - Size: 3890 bytes
+  - Text length: 2414 characters
+  - Database ID: 14
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Cardiac_Enzymes_-_Myocardial_Infarction.pdf
+Database ID: 14
+Text Length: 2,414 characters
+File Size: 3,890 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(14)
+  get_documents_by_filename('Cardiac_Enzymes_-_Myocardial_Infarction.pdf')
+============================================================
+--- End Cardiac_Enzymes_-_Myocardial_Infarction.pdf ---
+
+2025-05-26 01:49:36 - 📄 Processing: Cardiology_Report.pdf (1.5 KB)
+2025-05-26 01:49:55 - ✅ SUCCESS: Cardiology_Report.pdf processed successfully
+2025-05-26 01:49:55 -    📊 Database ID: 15
+15
+2025-05-26 01:49:55 -    📝 Text length: 494 characters
+--- Processing Cardiology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Cardiology_Report.pdf' stored successfully in database with ID: 15
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Cardiology_Report.pdf
+  - Size: 1512 bytes
+  - Text length: 494 characters
+  - Database ID: 15
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Cardiology_Report.pdf
+Database ID: 15
+Text Length: 494 characters
+File Size: 1,512 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(15)
+  get_documents_by_filename('Cardiology_Report.pdf')
+============================================================
+--- End Cardiology_Report.pdf ---
+
+2025-05-26 01:49:56 - 📄 Processing: Cardiovascular_Surgery_Report.pdf (5.7 KB)
+2025-05-26 01:50:08 - ✅ SUCCESS: Cardiovascular_Surgery_Report.pdf processed successfully
+2025-05-26 01:50:08 -    📊 Database ID: 16
+16
+2025-05-26 01:50:08 -    📝 Text length: 2725 characters
+--- Processing Cardiovascular_Surgery_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Cardiovascular_Surgery_Report.pdf' stored successfully in database with ID: 16
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Cardiovascular_Surgery_Report.pdf
+  - Size: 5871 bytes
+  - Text length: 2725 characters
+  - Database ID: 16
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Cardiovascular_Surgery_Report.pdf
+Database ID: 16
+Text Length: 2,725 characters
+File Size: 5,871 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(16)
+  get_documents_by_filename('Cardiovascular_Surgery_Report.pdf')
+============================================================
+--- End Cardiovascular_Surgery_Report.pdf ---
+
+2025-05-26 01:50:09 - 📄 Processing: Complete_Blood_Count_-_Anemia_Evaluation.pdf (1.4 KB)
+2025-05-26 01:50:22 - ✅ SUCCESS: Complete_Blood_Count_-_Anemia_Evaluation.pdf processed successfully
+2025-05-26 01:50:22 -    📊 Database ID: 17
+17
+2025-05-26 01:50:22 -    📝 Text length: 515 characters
+--- Processing Complete_Blood_Count_-_Anemia_Evaluation.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Complete_Blood_Count_-_Anemia_Evaluation.pdf' stored successfully in database with ID: 17
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Complete_Blood_Count_-_Anemia_Evaluation.pdf
+  - Size: 1452 bytes
+  - Text length: 515 characters
+  - Database ID: 17
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Complete_Blood_Count_-_Anemia_Evaluation.pdf
+Database ID: 17
+Text Length: 515 characters
+File Size: 1,452 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(17)
+  get_documents_by_filename('Complete_Blood_Count_-_Anemia_Evaluation.pdf')
+============================================================
+--- End Complete_Blood_Count_-_Anemia_Evaluation.pdf ---
+
+2025-05-26 01:50:23 - 📄 Processing: Dermatology_Report.pdf (5.5 KB)
+2025-05-26 01:50:41 - ✅ SUCCESS: Dermatology_Report.pdf processed successfully
+2025-05-26 01:50:41 -    📊 Database ID: 18
+18
+2025-05-26 01:50:41 -    📝 Text length: 520 characters
+--- Processing Dermatology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Dermatology_Report.pdf' stored successfully in database with ID: 18
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Dermatology_Report.pdf
+  - Size: 5675 bytes
+  - Text length: 520 characters
+  - Database ID: 18
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Dermatology_Report.pdf
+Database ID: 18
+Text Length: 520 characters
+File Size: 5,675 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(18)
+  get_documents_by_filename('Dermatology_Report.pdf')
+============================================================
+--- End Dermatology_Report.pdf ---
+
+2025-05-26 01:50:42 - 📄 Processing: Diabetes_Panel_-_Glycemic_Control.pdf (1.4 KB)
+2025-05-26 01:50:53 - ✅ SUCCESS: Diabetes_Panel_-_Glycemic_Control.pdf processed successfully
+2025-05-26 01:50:53 -    📊 Database ID: 19
+19
+2025-05-26 01:50:53 -    📝 Text length: 412 characters
+--- Processing Diabetes_Panel_-_Glycemic_Control.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Diabetes_Panel_-_Glycemic_Control.pdf' stored successfully in database with ID: 19
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Diabetes_Panel_-_Glycemic_Control.pdf
+  - Size: 1392 bytes
+  - Text length: 412 characters
+  - Database ID: 19
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Diabetes_Panel_-_Glycemic_Control.pdf
+Database ID: 19
+Text Length: 412 characters
+File Size: 1,392 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(19)
+  get_documents_by_filename('Diabetes_Panel_-_Glycemic_Control.pdf')
+============================================================
+--- End Diabetes_Panel_-_Glycemic_Control.pdf ---
+
+2025-05-26 01:50:54 - 📄 Processing: ENT_Report.pdf (5.6 KB)
+2025-05-26 01:51:11 - ✅ SUCCESS: ENT_Report.pdf processed successfully
+2025-05-26 01:51:11 -    📊 Database ID: 20
+20
+2025-05-26 01:51:11 -    📝 Text length: 3957 characters
+--- Processing ENT_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'ENT_Report.pdf' stored successfully in database with ID: 20
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: ENT_Report.pdf
+  - Size: 5750 bytes
+  - Text length: 3957 characters
+  - Database ID: 20
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/ENT_Report.pdf
+Database ID: 20
+Text Length: 3,957 characters
+File Size: 5,750 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(20)
+  get_documents_by_filename('ENT_Report.pdf')
+============================================================
+--- End ENT_Report.pdf ---
+
+2025-05-26 01:51:12 - 📄 Processing: Endocrinology_Report 2.pdf (5.6 KB)
+2025-05-26 01:51:25 - ✅ SUCCESS: Endocrinology_Report 2.pdf processed successfully
+2025-05-26 01:51:25 -    📊 Database ID: 21
+21
+2025-05-26 01:51:25 -    📝 Text length: 546 characters
+--- Processing Endocrinology_Report 2.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Endocrinology_Report 2.pdf' stored successfully in database with ID: 21
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Endocrinology_Report 2.pdf
+  - Size: 5722 bytes
+  - Text length: 546 characters
+  - Database ID: 21
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Endocrinology_Report 2.pdf
+Database ID: 21
+Text Length: 546 characters
+File Size: 5,722 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(21)
+  get_documents_by_filename('Endocrinology_Report 2.pdf')
+============================================================
+--- End Endocrinology_Report 2.pdf ---
+
+2025-05-26 01:51:26 - 📄 Processing: Endocrinology_Report.pdf (1.5 KB)
+2025-05-26 01:51:42 - ✅ SUCCESS: Endocrinology_Report.pdf processed successfully
+2025-05-26 01:51:42 -    📊 Database ID: 22
+22
+2025-05-26 01:51:42 -    📝 Text length: 422 characters
+--- Processing Endocrinology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Endocrinology_Report.pdf' stored successfully in database with ID: 22
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Endocrinology_Report.pdf
+  - Size: 1485 bytes
+  - Text length: 422 characters
+  - Database ID: 22
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Endocrinology_Report.pdf
+Database ID: 22
+Text Length: 422 characters
+File Size: 1,485 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(22)
+  get_documents_by_filename('Endocrinology_Report.pdf')
+============================================================
+--- End Endocrinology_Report.pdf ---
+
+2025-05-26 01:51:43 - 📄 Processing: Gastroenterology_Report.pdf (1.4 KB)
+2025-05-26 01:51:55 - ✅ SUCCESS: Gastroenterology_Report.pdf processed successfully
+2025-05-26 01:51:55 -    📊 Database ID: 23
+23
+2025-05-26 01:51:55 -    📝 Text length: 396 characters
+--- Processing Gastroenterology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Gastroenterology_Report.pdf' stored successfully in database with ID: 23
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Gastroenterology_Report.pdf
+  - Size: 1444 bytes
+  - Text length: 396 characters
+  - Database ID: 23
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Gastroenterology_Report.pdf
+Database ID: 23
+Text Length: 396 characters
+File Size: 1,444 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(23)
+  get_documents_by_filename('Gastroenterology_Report.pdf')
+============================================================
+--- End Gastroenterology_Report.pdf ---
+
+2025-05-26 01:51:56 - 📄 Processing: Geriatrics_Report.pdf (5.7 KB)
+2025-05-26 01:52:08 - ❌ ERROR: Failed to process Geriatrics_Report.pdf
+2025-05-26 01:52:08 -    Error details:
+2025-05-26 01:52:08 -    ⇢ Uploading PDF …
+2025-05-26 01:52:08 -    ⇢ Ensuring Assistant exists …
+2025-05-26 01:52:08 -    using existing assistant
+2025-05-26 01:52:08 -    ⇢ Creating thread and run …
+2025-05-26 01:52:08 -    ⇢ Waiting for file search to finish …
+2025-05-26 01:52:08 -       status: in_progress …
+2025-05-26 01:52:08 -       status: completed …
+2025-05-26 01:52:08 -    Traceback (most recent call last):
+2025-05-26 01:52:08 -      File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 147, in <module>
+2025-05-26 01:52:08 -        assistant_reply = next(m for m in msgs if m.role == "assistant").content[0].text.value
+2025-05-26 01:52:08 -                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+2025-05-26 01:52:08 -    IndexError: list index out of range
+--- Processing Geriatrics_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 147, in <module>
+    assistant_reply = next(m for m in msgs if m.role == "assistant").content[0].text.value
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+--- End Geriatrics_Report.pdf ---
+
+2025-05-26 01:52:09 - 📄 Processing: Gynecology_Report.pdf (5.9 KB)
+2025-05-26 01:52:22 - ✅ SUCCESS: Gynecology_Report.pdf processed successfully
+2025-05-26 01:52:22 -    📊 Database ID: 24
+24
+2025-05-26 01:52:22 -    📝 Text length: 186 characters
+--- Processing Gynecology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Gynecology_Report.pdf' stored successfully in database with ID: 24
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Gynecology_Report.pdf
+  - Size: 6013 bytes
+  - Text length: 186 characters
+  - Database ID: 24
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Gynecology_Report.pdf
+Database ID: 24
+Text Length: 186 characters
+File Size: 6,013 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(24)
+  get_documents_by_filename('Gynecology_Report.pdf')
+============================================================
+--- End Gynecology_Report.pdf ---
+
+2025-05-26 01:52:23 - 📄 Processing: Hematology_Report.pdf (5.7 KB)
+2025-05-26 01:52:31 - ✅ SUCCESS: Hematology_Report.pdf processed successfully
+2025-05-26 01:52:31 -    📊 Database ID: 25
+25
+2025-05-26 01:52:31 -    📝 Text length: 568 characters
+--- Processing Hematology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Hematology_Report.pdf' stored successfully in database with ID: 25
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Hematology_Report.pdf
+  - Size: 5813 bytes
+  - Text length: 568 characters
+  - Database ID: 25
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Hematology_Report.pdf
+Database ID: 25
+Text Length: 568 characters
+File Size: 5,813 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(25)
+  get_documents_by_filename('Hematology_Report.pdf')
+============================================================
+--- End Hematology_Report.pdf ---
+
+2025-05-26 01:52:33 - 📄 Processing: Hepatology_Report.pdf (5.7 KB)
+2025-05-26 01:52:46 - ✅ SUCCESS: Hepatology_Report.pdf processed successfully
+2025-05-26 01:52:46 -    📊 Database ID: 26
+26
+2025-05-26 01:52:46 -    📝 Text length: 550 characters
+--- Processing Hepatology_Report.pdf ---
+⇢ Uploading PDF …
+⇢ Ensuring Assistant exists …
+using existing assistant
+⇢ Creating thread and run …
+⇢ Waiting for file search to finish …
+   status: in_progress …
+   status: completed …
+⇢ Storing extracted text in database …
+Successfully connected to PostgreSQL database with pgvector support
+Database connection closed
+Successfully connected to PostgreSQL database with pgvector support
+✓ Document 'Hepatology_Report.pdf' stored successfully in database with ID: 26
+Database connection closed
+✓ PDF text extraction and database storage completed successfully!
+  - File: Hepatology_Report.pdf
+  - Size: 5791 bytes
+  - Text length: 550 characters
+  - Database ID: 26
+
+============================================================
+EXTRACTION SUMMARY
+============================================================
+PDF File: /Users/parryh/suwadoc/python-llm/openai-pdf/reports/Hepatology_Report.pdf
+Database ID: 26
+Text Length: 550 characters
+File Size: 5,791 bytes
+
+To retrieve this document later, you can use:
+  get_document_by_id(26)
+  get_documents_by_filename('Hepatology_Report.pdf')
+============================================================
+--- End Hepatology_Report.pdf ---
+
+2025-05-26 01:52:47 - 📄 Processing: Hormonal_Evaluation_-_Adrenal_Insufficiency.pdf (3.7 KB)

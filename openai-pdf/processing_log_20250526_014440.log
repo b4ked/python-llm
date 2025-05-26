@@ -1,0 +1,22 @@
+2025-05-26 01:44:40 - 🚀 PDF Batch Processing Script
+2025-05-26 01:44:40 - ===============================
+2025-05-26 01:44:40 - Script: process_all_pdfs.sh
+2025-05-26 01:44:40 - Started: Mon May 26 01:44:40 BST 2025
+2025-05-26 01:44:40 - Reports directory: /Users/parryh/suwadoc/python-llm/openai-pdf/reports
+2025-05-26 01:44:40 - Log file: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014440.log
+2025-05-26 01:44:40 - 🔍 Checking prerequisites...
+2025-05-26 01:44:40 - ✅ Prerequisites check completed
+2025-05-26 01:44:40 - 🔍 Scanning for PDF files...
+2025-05-26 01:44:40 - 📁 Found 53 PDF files to process
+2025-05-26 01:44:40 - ⚡ About to process 53 PDF files
+ - 🛑 Processing cancelled by user
+2025-05-26 01:44:51 - 🛑 Script interrupted
+2025-05-26 01:44:51 - 📊 PROCESSING SUMMARY
+2025-05-26 01:44:51 - ====================
+2025-05-26 01:44:51 - Total files found: 53
+2025-05-26 01:44:51 - Files processed: 0
+2025-05-26 01:44:51 - Successful: 0
+2025-05-26 01:44:51 - Errors: 0
+2025-05-26 01:44:51 - Skipped: 0
+2025-05-26 01:44:51 - 📋 Detailed log saved to: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014440.log
+2025-05-26 01:44:51 - 🎉 All files processed successfully!

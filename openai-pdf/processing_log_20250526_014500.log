@@ -1,0 +1,83 @@
+2025-05-26 01:45:00 - 🚀 PDF Batch Processing Script
+2025-05-26 01:45:00 - ===============================
+2025-05-26 01:45:00 - Script: process_all_pdfs.sh
+2025-05-26 01:45:00 - Started: Mon May 26 01:45:00 BST 2025
+2025-05-26 01:45:00 - Reports directory: /Users/parryh/suwadoc/python-llm/openai-pdf/reports
+2025-05-26 01:45:00 - Log file: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014500.log
+2025-05-26 01:45:00 - 🔍 Checking prerequisites...
+2025-05-26 01:45:00 - ✅ Prerequisites check completed
+2025-05-26 01:45:00 - 🔍 Scanning for PDF files...
+2025-05-26 01:45:00 - 📁 Found 53 PDF files to process
+2025-05-26 01:45:00 - ⚡ About to process 53 PDF files
+2025-05-26 01:45:02 - 🏁 Starting batch processing...
+2025-05-26 01:45:02 - 📄 Processing: Allergy_&_Immunology_Report.pdf (5.7 KB)
+2025-05-26 01:45:02 - ❌ ERROR: Failed to process Allergy_&_Immunology_Report.pdf
+2025-05-26 01:45:02 -    Error details:
+2025-05-26 01:45:02 -    Traceback (most recent call last):
+2025-05-26 01:45:02 -      File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+2025-05-26 01:45:02 -        from openai import OpenAI
+2025-05-26 01:45:02 -    ModuleNotFoundError: No module named 'openai'
+--- Processing Allergy_&_Immunology_Report.pdf ---
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+    from openai import OpenAI
+ModuleNotFoundError: No module named 'openai'
+--- End Allergy_&_Immunology_Report.pdf ---
+
+2025-05-26 01:45:03 - 📄 Processing: Anemia_Workup_-_Pernicious_Anemia.pdf (3.8 KB)
+2025-05-26 01:45:03 - ❌ ERROR: Failed to process Anemia_Workup_-_Pernicious_Anemia.pdf
+2025-05-26 01:45:03 -    Error details:
+2025-05-26 01:45:03 -    Traceback (most recent call last):
+2025-05-26 01:45:03 -      File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+2025-05-26 01:45:03 -        from openai import OpenAI
+2025-05-26 01:45:03 -    ModuleNotFoundError: No module named 'openai'
+--- Processing Anemia_Workup_-_Pernicious_Anemia.pdf ---
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+    from openai import OpenAI
+ModuleNotFoundError: No module named 'openai'
+--- End Anemia_Workup_-_Pernicious_Anemia.pdf ---
+
+2025-05-26 01:45:04 - 📄 Processing: Appendix-2.-Example-Medical-Report-1.pdf (173.3 KB)
+2025-05-26 01:45:04 - ❌ ERROR: Failed to process Appendix-2.-Example-Medical-Report-1.pdf
+2025-05-26 01:45:04 -    Error details:
+2025-05-26 01:45:04 -    Traceback (most recent call last):
+2025-05-26 01:45:04 -      File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+2025-05-26 01:45:04 -        from openai import OpenAI
+2025-05-26 01:45:04 -    ModuleNotFoundError: No module named 'openai'
+--- Processing Appendix-2.-Example-Medical-Report-1.pdf ---
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+    from openai import OpenAI
+ModuleNotFoundError: No module named 'openai'
+--- End Appendix-2.-Example-Medical-Report-1.pdf ---
+
+2025-05-26 01:45:05 - 📄 Processing: Autoimmune_Panel_-_SLE_Workup.pdf (1.4 KB)
+2025-05-26 01:45:05 - ❌ ERROR: Failed to process Autoimmune_Panel_-_SLE_Workup.pdf
+2025-05-26 01:45:05 -    Error details:
+2025-05-26 01:45:05 -    Traceback (most recent call last):
+2025-05-26 01:45:05 -      File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+2025-05-26 01:45:05 -        from openai import OpenAI
+2025-05-26 01:45:05 -    ModuleNotFoundError: No module named 'openai'
+--- Processing Autoimmune_Panel_-_SLE_Workup.pdf ---
+Traceback (most recent call last):
+  File "/Users/parryh/suwadoc/python-llm/openai-pdf/openai-pdf-db.py", line 12, in <module>
+    from openai import OpenAI
+ModuleNotFoundError: No module named 'openai'
+--- End Autoimmune_Panel_-_SLE_Workup.pdf ---
+
+2025-05-26 01:45:05 - 🛑 Script interrupted
+2025-05-26 01:45:05 - 📊 PROCESSING SUMMARY
+2025-05-26 01:45:05 - ====================
+2025-05-26 01:45:05 - Total files found: 53
+2025-05-26 01:45:05 - Files processed: 4
+2025-05-26 01:45:05 - Successful: 0
+2025-05-26 01:45:05 - Errors: 4
+2025-05-26 01:45:05 - Skipped: 0
+2025-05-26 01:45:05 - ❌ Files with errors:
+2025-05-26 01:45:05 -    • Allergy_&_Immunology_Report.pdf
+2025-05-26 01:45:05 -    • Anemia_Workup_-_Pernicious_Anemia.pdf
+2025-05-26 01:45:05 -    • Appendix-2.-Example-Medical-Report-1.pdf
+2025-05-26 01:45:05 -    • Autoimmune_Panel_-_SLE_Workup.pdf
+2025-05-26 01:45:05 - 📋 Detailed log saved to: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014500.log
+2025-05-26 01:45:05 - ⚠️  Processing completed with 4 errors

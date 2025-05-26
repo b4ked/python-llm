@@ -1,0 +1,9 @@
+2025-05-26 01:44:01 - 🚀 PDF Batch Processing Script
+2025-05-26 01:44:01 - ===============================
+2025-05-26 01:44:01 - Script: process_all_pdfs.sh
+2025-05-26 01:44:01 - Started: Mon May 26 01:44:01 BST 2025
+2025-05-26 01:44:01 - Reports directory: /Users/parryh/suwadoc/python-llm/openai-pdf/reports
+2025-05-26 01:44:01 - Log file: /Users/parryh/suwadoc/python-llm/openai-pdf/processing_log_20250526_014401.log
+2025-05-26 01:44:01 - 🔍 Checking prerequisites...
+2025-05-26 01:44:01 - ✅ Prerequisites check completed
+2025-05-26 01:44:01 - 🔍 Scanning for PDF files...
